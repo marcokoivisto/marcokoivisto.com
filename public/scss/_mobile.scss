@@ -1,0 +1,163 @@
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .large-letter {
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .text-block.no-image .description {
+    width: 100%;
+  }
+  .text-block:first-child {
+    padding-top: 0px;
+  }
+  .text-block,
+  .text-block.reverse {
+    flex-direction: column;
+    padding-bottom: 0px;
+    .description,
+    .images {
+      width: 100%;
+      padding: 0px;
+    }
+    .description {
+      padding-bottom: 60px;
+      max-width: 700px;
+      &.ingress p {
+        font-size: 22px;
+      }
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      .image {
+        position: static;
+        opacity: 1 !important;
+        &:first-child {
+          margin-right: 30px;
+        }
+        &:last-child {
+          margin-left: 30px;
+        }
+        &:hover {
+          width: 275px;
+          height: 275px;
+        }
+        &:hover + .image {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .container.padding {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .text-block .description,
+  .text-block.reverse .description {
+    padding-bottom: 40px;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .text-block,
+  .text-block.reverse {
+    .images {
+      .image {
+        &:first-child {
+          margin-right: 15px;
+        }
+        &:last-child {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 639px) {
+  footer {
+    .copyright .container {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  br {
+    display: none;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .text-block.padding {
+    padding-top: 40px;
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+  .text-block,
+  .text-block.reverse {
+    .images {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      .image {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        &:first-child {
+          margin-right: 0px;
+          margin-bottom: 40px;
+        }
+        &:last-child {
+          margin-left: 0px;
+        }
+        &:hover {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .text-block,
+  .text-block.reverse {
+    .images {
+      .image {
+        width: 100%;
+        height: 295px;
+        &:hover {
+          width: 100%;
+          height: 275px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "marcokoivisto2018",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node-sass -w ./scss/style.scss ./css/style.css --source-map true",
+    "release": "node-sass ./scss/style.scss ./css/style.css --output-style compressed"
+  },
+  "author": "Marco Koivisto",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
