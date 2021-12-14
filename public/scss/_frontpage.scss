@@ -1,67 +1,57 @@
 .front-header {
-	height: 100vh;
-	border-bottom: 1px solid $border-color;
-	position: relative;
-	overflow: hidden;
-	h2 {
-		font-family: CaslonPro, 'Times New Roman';
-		opacity: 0;
-		transform: translateY(100px);
-		-webkit-transition: all 1s ease;
-		-moz-transition: all 1s ease;
-		-o-transition: all 1s ease;
-		transition: all 1s ease;
-		transition-delay: 2.5s;
-		line-height: 1.5;
-	}
-	.first, .second  {
-		opacity: 0;
-	}
-	.first {
-		-webkit-transition: all 1s ease-in;
-		-moz-transition: all 1s ease-in;
-		-o-transition: all 1s ease-in;
-		transition: all 1s ease-in;
-		transition-delay: 1s;
-	}
-	.second {
-		-webkit-transition: all 0.6s ease-in;
-		-moz-transition: all 0.6s ease-in;
-		-o-transition: all 0.6s ease-in;
-		transition: all 0.6s ease-in;
-		transition-delay: 1.8s;
-	}
+  height: 100vh;
+  border-bottom: 1px solid $lightGray;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    font-family: CaslonPro, "Times New Roman";
+    opacity: 0;
+    transition: opacity 1s ease;
+    line-height: 1.5;
+    position: absolute;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+  h1 {
+    .first,
+    .second {
+      opacity: 0;
+    }
+    .first {
+      transition: opacity 1s ease-in;
+      transition-delay: 1s;
+    }
+    .second {
+      transition: opacity 0.6s ease-in;
+      transition-delay: 1.8s;
+    }
+  }
 }
 .yellow-box {
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	background-color: $yellow-color;
-	margin: auto;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+  transform: scale(1);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 1s ease;
 }
+
 .front-header.animate {
-	.yellow-box {
-		height: 300px;
-		width: 300px;
-		right: -25%;
-	}
-	.first {
-		opacity: 1;
-	}
-	.second {
-		opacity: 1;
-	}
-	h2 {
-		transform: translateY(0px);
-		opacity: 1;
-	}
+  .yellow-box {
+    transform: scale(3);
+    right: -25%;
+  }
+  h1 {
+    .first {
+      opacity: 1;
+    }
+    .second {
+      opacity: 1;
+    }
+  }
 }

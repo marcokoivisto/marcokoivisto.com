@@ -1,25 +1,23 @@
 jQuery(document).ready(function () {
-  // Starts the front header animation.
   setTimeout(function () {
     jQuery(".front-header").addClass("animate");
   }, 300);
 
-  // Function for scrolling to top.
-  jQuery(".scroll-top").click(function () {
-    window.scroll({ top: 0, behavior: "smooth" });
-  });
+  setTimeout(function () {
+    jQuery(".front-header h2.first").toggleClass("show");
+  }, 2700);
 
-  // Set copyright year...
-  jQuery("#year").html(new Date().getFullYear());
+  setTimeout(function () {
+    jQuery(".front-header h2.first").toggleClass("show");
+    jQuery(".front-header h2.second").toggleClass("show");
+  }, 10700);
 
-  /*
-	jQuery(window).scroll(function () {
-		if ($(document).scrollTop() > 300) {
-		}
-		if ($(document).scrollTop() > 600) {
-		}
-		else {
-		}
-	});
-	*/
+  setTimeout(function () {
+    jQuery(".front-header h2.second").toggleClass("show");
+    jQuery(".front-header h2.third").toggleClass("show");
+  }, 18700);
+
+  setTimeout(function () {
+    window.location = "https://www.inly.se";
+  }, 26700);
 });
