@@ -32,9 +32,9 @@
     font-size: 20px;
   }
 
-  .front-header.animate {
+  .header.animate {
     .yellow-box {
-      transform: scale(3);
+      transform: scale(3) translateY(15px);
     }
   }
 }

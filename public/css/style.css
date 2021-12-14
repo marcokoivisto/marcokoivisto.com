@@ -8,6 +8,10 @@
   box-sizing: border-box;
   max-width: 100%; }
 
+body {
+  height: calc(100vh - env(safe-area-inset-bottom));
+  overflow: hidden; }
+
 h1 {
   font-size: 64px;
   font-family: "Roboto", sans-serif;
@@ -74,26 +78,36 @@ h3 {
 .relative {
   position: relative; }
 
-.front-header {
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; } }
+
+.header {
   height: 100vh;
   border-bottom: 1px solid #efefef;
   position: relative;
   overflow: hidden; }
-  .front-header h2 {
+  .header h2 {
     font-family: CaslonPro, "Times New Roman";
     opacity: 0;
     transition: opacity 1s ease;
     line-height: 1.5;
     position: absolute; }
-    .front-header h2.show {
+    .header h2.show {
       opacity: 1; }
-  .front-header h1 .first,
-  .front-header h1 .second {
+  .header h1 .first,
+  .header h1 .second {
     opacity: 0; }
-  .front-header h1 .first {
+  .header h1 .first {
     transition: opacity 1s ease-in;
     transition-delay: 1s; }
-  .front-header h1 .second {
+  .header h1 .second {
     transition: opacity 0.6s ease-in;
     transition-delay: 1.8s; }
 
@@ -108,14 +122,14 @@ h3 {
   z-index: -1;
   transition: all 1s ease; }
 
-.front-header.animate .yellow-box {
+.header.animate .yellow-box {
   transform: scale(3);
   right: -25%; }
 
-.front-header.animate h1 .first {
+.header.animate h1 .first {
   opacity: 1; }
 
-.front-header.animate h1 .second {
+.header.animate h1 .second {
   opacity: 1; }
 
 @media screen and (max-width: 1100px) {
@@ -143,8 +157,8 @@ h3 {
     font-size: 32px; }
   h2 {
     font-size: 20px; }
-  .front-header.animate .yellow-box {
-    transform: scale(3); } }
+  .header.animate .yellow-box {
+    transform: scale(3) translateY(15px); } }
 
 @media screen and (max-width: 390px) {
   .container {

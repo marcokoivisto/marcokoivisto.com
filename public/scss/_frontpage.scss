@@ -1,8 +1,9 @@
-.front-header {
+.header {
   height: 100vh;
   border-bottom: 1px solid $lightGray;
   position: relative;
   overflow: hidden;
+
   h2 {
     font-family: CaslonPro, "Times New Roman";
     opacity: 0;
@@ -29,6 +30,7 @@
     }
   }
 }
+
 .yellow-box {
   transform: scale(1);
   position: absolute;
@@ -41,7 +43,7 @@
   transition: all 1s ease;
 }
 
-.front-header.animate {
+.header.animate {
   .yellow-box {
     transform: scale(3);
     right: -25%;
