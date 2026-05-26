@@ -1,9 +1,14 @@
 @use "variables";
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+img,
+video,
+svg,
+canvas {
   max-width: 100%;
 }
 body {
