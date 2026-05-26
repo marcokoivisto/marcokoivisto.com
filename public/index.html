@@ -14,13 +14,13 @@
     <meta itemprop="description" content="I solve problems, explore solutions, and think that every little detail matters..." />
     <meta itemprop="image" content="https://marcokoivisto.com/images/social.png" />
 
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Marco Koivisto" />
-    <meta name="og:description" content="I solve problems, explore solutions, and think that every little detail matters..." />
-    <meta name="og:image" content="https://marcokoivisto.com/images/social.png" />
-    <meta name="og:url" content="https://marcokoivisto.com/" />
-    <meta name="og:site_name" content="Marco Koivisto" />
-    <meta name="og:type" content="website" />
+    <!-- Open Graph (Facebook, LinkedIn, Slack, etc.) -->
+    <meta property="og:title" content="Marco Koivisto" />
+    <meta property="og:description" content="I solve problems, explore solutions, and think that every little detail matters..." />
+    <meta property="og:image" content="https://marcokoivisto.com/images/social.png" />
+    <meta property="og:url" content="https://marcokoivisto.com/" />
+    <meta property="og:site_name" content="Marco Koivisto" />
+    <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet" />
@@ -32,19 +32,6 @@
     <meta name="msapplication-TileColor" content="#fcff93" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116717202-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "UA-116717202-1");
-    </script>
 </head>
 
 <body>
@@ -73,8 +60,8 @@
         <canvas width="300" height="300" class="yellow-box" id="yellow-box-3d"></canvas>
     </header>
 
-    <script src="js/site.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.3.2/gl-matrix.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.3.2/gl-matrix.js"></script>
+    <script defer src="js/site.min.js"></script>
 </body>
 
 </html>

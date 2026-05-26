@@ -1,4 +1,6 @@
 @font-face {
   font-family: CaslonPro;
-  src: url(../fonts/ACaslonPro-Regular.otf);
+  src: url(../fonts/ACaslonPro-Regular.woff2) format("woff2"),
+       url(../fonts/ACaslonPro-Regular.otf) format("opentype");
+  font-display: swap;
 }
